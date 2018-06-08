@@ -1,31 +1,31 @@
 <html>
 <body>
 <script>
-function sumTo1(nVal)
+function sumTo1(Val)
 {
 	var sum = 0;
-	for (var i=1;i<=nVal;i++)
+	for (var i=1;i<=Val;i++)
 	{
 		sum+=i;
 	}
 	return sum;
 }
 
-function sumTo2(nVal)
+function sumTo2(Val)
 {
-	if (nVal==0)
+	if (Val==0)
 	{
 		return 0;
 	}
 	else
 	{
-		return nVal+sumTo2(nVal-1);
+		return nVal+sumTo2(Val-1);
 	}
 }
 
-function sumTo3(nVal)
+function sumTo3(Val)
 {
-	return nVal * (nVal + 1) / 2;
+	return Val * (Val + 1) / 2;
 }
 
 

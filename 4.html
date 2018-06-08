@@ -1,0 +1,37 @@
+<html>
+<body>
+<script>
+function sumTo1(nVal)
+{
+	var sum = 0;
+	for (var i=1;i<=nVal;i++)
+	{
+		sum+=i;
+	}
+	return sum;
+}
+
+function sumTo2(nVal)
+{
+	if (nVal==0)
+	{
+		return 0;
+	}
+	else
+	{
+		return nVal+sumTo2(nVal-1);
+	}
+}
+
+function sumTo3(nVal)
+{
+	return nVal * (nVal + 1) / 2;
+}
+
+
+alert(sumTo1(7));
+alert(sumTo2(7));
+alert(sumTo3(7));
+</script>
+</body>
+</html>

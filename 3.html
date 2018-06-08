@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+function pow(x, n)
+{
+	var nRes = x;
+	for (var i = 1; i < n; i++)
+	{
+		nRes *= x;
+	}
+	return nRes;
+}
+
+var x = prompt("Введите x", '');
+var n = prompt("Введите n", '');
+while (n<1 && n!= null) 
+{
+	n = prompt("Введите натуральное число n", '');
+}
+alert(pow(x, n));
+</script>
+</body>
+</html>
